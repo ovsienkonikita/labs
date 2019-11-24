@@ -7,12 +7,12 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ListAnalyzerTest {
+class MatrixAnalyzerTest {
 
     @Test
     public void testSum() {
         List<List<Double>> matrix = generateMatrix();
-        ListAnalyzer analyzer = new ListAnalyzer(matrix);
+        MatrixAnalyzer analyzer = new MatrixAnalyzer(matrix);
         double sum = analyzer.getSum();
         assertEquals(36100.0, sum);
     }
@@ -20,7 +20,7 @@ class ListAnalyzerTest {
     @Test
     public void testMin() {
         List<List<Double>> matrix = generateMatrix();
-        ListAnalyzer analyzer = new ListAnalyzer(matrix);
+        MatrixAnalyzer analyzer = new MatrixAnalyzer(matrix);
         double min = analyzer.getMin();
         assertEquals(0.0, min);
     }
@@ -28,7 +28,7 @@ class ListAnalyzerTest {
     @Test
     public void testMax() {
         List<List<Double>> matrix = generateMatrix();
-        ListAnalyzer analyzer = new ListAnalyzer(matrix);
+        MatrixAnalyzer analyzer = new MatrixAnalyzer(matrix);
         double max = analyzer.getMax();
         assertEquals(361.0, max);
     }

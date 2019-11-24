@@ -2,11 +2,11 @@ package lab1;
 
 import java.util.List;
 
-public class ListAnalyzer {
+public class MatrixAnalyzer {
 
     private List<List<Double>> __list;
 
-    public ListAnalyzer(List<List<Double>> list) {
+    public MatrixAnalyzer(List<List<Double>> list) {
         __list = list;
     }
 
